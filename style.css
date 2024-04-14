@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+body {
+  background: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.container h1 {
+  font-size: 2.5em;
+  color: #ff7240;
+}
+
+.wrapper-tdl {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-tdl .input-box {
+  padding: 13px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #ff7240;
+  outline: none;
+}
+
+.wrapper-tdl .tdl-btn {
+  padding: 13px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #ff7240;
+  /*   font-size: 1.1em; */
+  font-weight: bold;
+  color: #333;
+  transition: 0.9s ease-in-out;
+}
+
+.wrapper-tdl .tdl-btn:hover {
+  color: #fff;
+  background: green;
+}
+
+/* javascript section */
+
+/* div element created in js with its parent container in html*/
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+/* the paragraph element created within a div in js*/
+.item-text {
+  padding: 13px;
+  width: 210px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: #fff;
+  margin: 0;
+}
+
+/* button element created in js*/
+.check-button,
+.trash-button {
+  border: none;
+  background-color: white;
+  height: 45px;
+  padding: 10px;
+}
+
+.check-button,
+.trash-button {
+  font-size: 15px;
+}
+
+.trash-button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.check-button:hover {
+  background-color: #24dc4c;
+  color: white;
+}
+
+.trash-button:hover {
+  background-color: #ef3636;
+  color: white;
+}
+
+.checklist {
+  text-decoration: line-through;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+button,
+.check-button,
+.trash-button {
+  cursor: pointer;
+}
